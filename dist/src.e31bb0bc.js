@@ -29772,17 +29772,159 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"index.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"data/restaurants.json":[function(require,module,exports) {
+module.exports = [{
+  "id": 1,
+  "name": "Mumtaz",
+  "address": "Chadwick Street, 1 & 2 Mackenzie House, Leeds LS10 1PJ",
+  "cuisine": ["Indian", "Asian", "Balti", "Pakistani"],
+  "dog-friendly": false,
+  "vegan-options": true,
+  "rating": 5
+}, {
+  "id": 2,
+  "name": "Salami & Co",
+  "address": "10 Market Place, Otley, Leeds LS21 3AQ England",
+  "cuisine": ["Cafe", "British"],
+  "dog-friendly": true,
+  "vegan-options": true,
+  "rating": 5
+}, {
+  "id": 3,
+  "name": "LS6 Cafe",
+  "address": "16A Headingley Lane, Leeds LS6 2AS England",
+  "cuisine": ["British", "Cafe", "International"],
+  "dog-friendly": true,
+  "vegan-options": true,
+  "rating": 4
+}, {
+  "id": 4,
+  "name": "Gaucho",
+  "address": "21-22 Park Row, Leeds LS1 5JF England",
+  "cuisine": ["Steakhouse", "Argentinian"],
+  "dog-friendly": false,
+  "vegan-options": false,
+  "rating": 3
+}, {
+  "id": 5,
+  "name": "Viet Guy",
+  "address": "159 Lower Briggate, Leeds LS1 6LY England",
+  "cuisine": ["Asian", "Vietnamese"],
+  "dog-friendly": false,
+  "vegan-options": true,
+  "rating": 4.5
+}, {
+  "id": 6,
+  "name": "The Brunswick",
+  "address": "82 North Street, Leeds LS2 7PN England",
+  "cuisine": ["Bar", "British", "Pub"],
+  "dog-friendly": true,
+  "vegan-options": true,
+  "rating": 4
+}];
+},{}],"App.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.App = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _restaurants = _interopRequireDefault(require("~/data/restaurants"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var cuisines = _restaurants.default.map(function (restaurant) {
+  return restaurant.cuisine;
+}).flat();
+
+var checkboxes = cuisines.map(function (cuisine, index) {
+  return /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("label", null, cuisine, /*#__PURE__*/_react.default.createElement("input", {
+    type: "checkbox",
+    key: index,
+    name: cuisine
+  })));
+});
+
+var filteredRestaurants = _restaurants.default.filter(function (restaurant) {
+  return restaurant.name === "Mumtaz";
+});
+
+var list = filteredRestaurants.map(function (restaurant, index) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    key: index
+  }, /*#__PURE__*/_react.default.createElement("h2", null, restaurant.name), /*#__PURE__*/_react.default.createElement("p", null, "Address: ", restaurant.address), /*#__PURE__*/_react.default.createElement("p", null, "Cuisine: ", restaurant.cuisine.toString(), ","), /*#__PURE__*/_react.default.createElement("p", null, "Dog Friendly: ", restaurant["dog-friendly"] ? "Yes" : "No"), /*#__PURE__*/_react.default.createElement("p", null, "Vegan Options: ", restaurant["vegan-options"] ? "Yes" : "No"), /*#__PURE__*/_react.default.createElement("p", null, "Rating: ", restaurant.rating));
+});
+
+var App = /*#__PURE__*/function (_Component) {
+  _inherits(App, _Component);
+
+  var _super = _createSuper(App);
+
+  function App(props) {
+    var _this;
+
+    _classCallCheck(this, App);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      selectedCuisines: []
+    };
+    return _this;
+  }
+
+  _createClass(App, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", null, checkboxes, /*#__PURE__*/_react.default.createElement("h1", null, "List"), list);
+    }
+  }]);
+
+  return App;
+}(_react.Component);
+
+exports.App = App;
+},{"react":"../node_modules/react/index.js","~/data/restaurants":"data/restaurants.json"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
+var _App = require("~/App");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement("h1", null, "Hello world!"), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.App, null), document.getElementById("root"));
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","~/App":"App.jsx"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29810,7 +29952,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51786" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59661" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
