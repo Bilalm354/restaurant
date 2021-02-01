@@ -1,22 +1,14 @@
-import React, { Component } from "react"
+import React from "react"
 import restaurants from "~/data/restaurants"
+import { RestaurantsList } from '~/RestaurantsList'
 import 'fontsource-roboto'
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import { Checkbox, FormHelperText, FormControlLabel, FormGroup, FormControl, FormLabel, makeStyles, Typography, Container } from '@material-ui/core';
 
-const cuisines = restaurants.map((restaurant) => restaurant.cuisine).flat()
-const checkboxes = cuisines.map((cuisine, index) => <li key={index}><label>{cuisine}<input type="checkbox" name={cuisine} /></label></li>)
-const filteredRestaurants = restaurants.filter(restaurant => restaurant.name === "Mumtaz")
-const list = filteredRestaurants.map((restaurant, index) => (
-    <div key={index}>
-        <Typography variant="h4" gutterBottom>{restaurant.name}</Typography>
-        <Typography variant="body1" gutterBottom>Address: {restaurant.address}</Typography>
-        <Typography variant="body1" gutterBottom>Cuisine: {restaurant.cuisine.join(', ')}</Typography>
-        <Typography variant="body1" gutterBottom>Dog Friendly: {restaurant["dog-friendly"] ? "Yes" : "No"}</Typography>
-        <Typography variant="body1" gutterBottom>Vegan Options: {restaurant["vegan-options"] ? "Yes" : "No"}</Typography>
-        <Typography variant="body1" gutterBottom>Rating: {restaurant.rating}</Typography>
-    </ div>
-))
+
+
+function isEverySelectedCuisineInRestaurant(selectedCuisines, restaurant) {
+    return selectedCuisines.every(cuisine => restaurant.cuisine.indexOf(cuisine) !== -1)
+}
 
 const useStyles = makeStyles({
     root: {
@@ -28,13 +20,51 @@ const useStyles = makeStyles({
 
 export function App() {
     const classes = useStyles();
+    const [state, setState] = React.useState({
+        selectedCuisines: []
+    });
+
+    const allCuisinesFromData = restaurants.map((restaurant) => restaurant.cuisine).flat()
+    const uniqueCuisines = [... new Set(allCuisinesFromData)]
+    const sortedCuisines = uniqueCuisines.sort()
+    const restaurantsWithSelectedCuisines = restaurants.filter(restaurant => isEverySelectedCuisineInRestaurant(state.selectedCuisines, restaurant))
+
+    const handleChange = (event) => {
+        const selectedCuisines = state.selectedCuisines;
+        const index = state.selectedCuisines.indexOf(event.target.name);
+        
+        if (index === -1) {
+            selectedCuisines.push(event.target.name)
+        } else {
+            selectedCuisines.splice(index)
+        }
+        
+        setState({ selectedCuisines });
+    };
+
+    const isSelected = (cuisine) => state.selectedCuisines.indexOf(cuisine) !== -1;
 
     return (
-        <div className={classes.root}>
-            {checkboxes}
+        <Container maxWidth="sm">
+            <Typography variant="h1">Cuisines</Typography>
+            <FormControl component="fieldset" className={classes.formControl}>
+                <FormLabel component="legend">Assign responsibility</FormLabel>
+                <FormGroup>
+                    {sortedCuisines.map(cuisine =>
+                        <FormControlLabel
+                            key = {cuisine}
+                            control={<Checkbox checked={isSelected(cuisine)} onChange={handleChange} name={cuisine} />}
+                            label={cuisine}
+                        />
+                    )}
+                </FormGroup>
+                <FormHelperText>Be careful</FormHelperText>
+            </FormControl>
             <Typography variant="h1">Restaurants</Typography>
-            {list}
-        </div>
+
+
+            <RestaurantsList availableRestaurants={restaurantsWithSelectedCuisines} />
+        </Container>
     );
 }
 
