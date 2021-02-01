@@ -1,35 +1,40 @@
 import React, { Component } from "react"
 import restaurants from "~/data/restaurants"
+import 'fontsource-roboto'
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
 
 const cuisines = restaurants.map((restaurant) => restaurant.cuisine).flat()
-const checkboxes = cuisines.map((cuisine, index) => <li><label>{cuisine}<input type="checkbox" key={index} name={cuisine} /></label></li>)
+const checkboxes = cuisines.map((cuisine, index) => <li key={index}><label>{cuisine}<input type="checkbox" name={cuisine} /></label></li>)
 const filteredRestaurants = restaurants.filter(restaurant => restaurant.name === "Mumtaz")
 const list = filteredRestaurants.map((restaurant, index) => (
     <div key={index}>
-        <h2>{restaurant.name}</h2>
-        <p>Address: {restaurant.address}</p>
-        <p>Cuisine: {restaurant.cuisine.toString()},</p>
-        <p>Dog Friendly: {restaurant["dog-friendly"] ? "Yes" : "No"}</p>
-        <p>Vegan Options: {restaurant["vegan-options"] ? "Yes" : "No"}</p>
-        <p>Rating: {restaurant.rating}</p>
+        <Typography variant="h4" gutterBottom>{restaurant.name}</Typography>
+        <Typography variant="body1" gutterBottom>Address: {restaurant.address}</Typography>
+        <Typography variant="body1" gutterBottom>Cuisine: {restaurant.cuisine.join(', ')}</Typography>
+        <Typography variant="body1" gutterBottom>Dog Friendly: {restaurant["dog-friendly"] ? "Yes" : "No"}</Typography>
+        <Typography variant="body1" gutterBottom>Vegan Options: {restaurant["vegan-options"] ? "Yes" : "No"}</Typography>
+        <Typography variant="body1" gutterBottom>Rating: {restaurant.rating}</Typography>
     </ div>
 ))
 
-export class App extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            selectedCuisines: []
-        }
-    }
+const useStyles = makeStyles({
+    root: {
+        width: '100%',
+        maxWidth: 500,
+    },
+});
 
-    render() {
-        return (
-            <div>
-                {checkboxes}
-                <h1>List</h1>
-                {list}
-            </div>
-        );
-    }
+
+export function App() {
+    const classes = useStyles();
+
+    return (
+        <div className={classes.root}>
+            {checkboxes}
+            <Typography variant="h1">Restaurants</Typography>
+            {list}
+        </div>
+    );
 }
+
