@@ -1,16 +1,18 @@
 import React from "react"
-import { Container, Typography } from '@material-ui/core';
+import { Button, Container, Typography } from '@material-ui/core';
 import 'fontsource-roboto'
 import restaurants from "~/data/restaurants"
 import { RestaurantsList } from '~/components/RestaurantsList'
 import { Selection } from '~/components/Selection'
 
 export function App() {
-    const [state, setState] = React.useState({
+    const emptyState = {
         selectedCuisines: [],
         veganFriendly: false,
         dogFriendly: false
-    });
+    }
+
+    const [state, setState] = React.useState(emptyState);
 
     const isEverySelectedCuisineInRestaurant = (selectedCuisines, restaurant) =>
         selectedCuisines.every(cuisine => restaurant.cuisine.indexOf(cuisine) !== -1)
@@ -39,7 +41,6 @@ export function App() {
     const allCuisinesFromData = restaurants.map((restaurant) => restaurant.cuisine).flat()
     const uniqueCuisines = [... new Set(allCuisinesFromData)]
     const sortedCuisines = uniqueCuisines.sort()
-    console.log(restaurants)
     const filteredRestaurants = restaurants.filter(restaurant =>
         isEverySelectedCuisineInRestaurant(state.selectedCuisines, restaurant)
         && (state.dogFriendly ? restaurant['dog-friendly'] : true)
@@ -48,6 +49,9 @@ export function App() {
 
     return (
         <Container maxWidth="sm">
+
+            <Button onClick={() => setState(emptyState)}>Clear Filters</Button>
+
             <Container maxWidth="sm">
                 <Typography variant="h3">Cuisine Selection</Typography>
                 <Selection

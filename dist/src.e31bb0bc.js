@@ -83276,11 +83276,13 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 function App() {
-  var _React$useState = _react.default.useState({
+  var emptyState = {
     selectedCuisines: [],
     veganFriendly: false,
     dogFriendly: false
-  }),
+  };
+
+  var _React$useState = _react.default.useState(emptyState),
       _React$useState2 = _slicedToArray(_React$useState, 2),
       state = _React$useState2[0],
       setState = _React$useState2[1];
@@ -83322,7 +83324,6 @@ function App() {
   var uniqueCuisines = _toConsumableArray(new Set(allCuisinesFromData));
 
   var sortedCuisines = uniqueCuisines.sort();
-  console.log(_restaurants.default);
 
   var filteredRestaurants = _restaurants.default.filter(function (restaurant) {
     return isEverySelectedCuisineInRestaurant(state.selectedCuisines, restaurant) && (state.dogFriendly ? restaurant['dog-friendly'] : true) && (state.veganFriendly ? restaurant['vegan-options'] : true);
@@ -83330,7 +83331,11 @@ function App() {
 
   return /*#__PURE__*/_react.default.createElement(_core.Container, {
     maxWidth: "sm"
-  }, /*#__PURE__*/_react.default.createElement(_core.Container, {
+  }, /*#__PURE__*/_react.default.createElement(_core.Button, {
+    onClick: function onClick() {
+      return setState(emptyState);
+    }
+  }, "Clear Filters"), /*#__PURE__*/_react.default.createElement(_core.Container, {
     maxWidth: "sm"
   }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
     variant: "h3"
