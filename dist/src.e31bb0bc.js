@@ -83272,7 +83272,7 @@ function App() {
     className: classes.formControl
   }, /*#__PURE__*/_react.default.createElement(_core.FormLabel, {
     component: "legend"
-  }, "Assign responsibility"), /*#__PURE__*/_react.default.createElement(_core.FormGroup, null, sortedCuisines.map(function (cuisine) {
+  }, "Select Cuisines"), /*#__PURE__*/_react.default.createElement(_core.FormGroup, null, sortedCuisines.map(function (cuisine) {
     return /*#__PURE__*/_react.default.createElement(_core.FormControlLabel, {
       key: cuisine,
       control: /*#__PURE__*/_react.default.createElement(_core.Checkbox, {

@@ -48,7 +48,7 @@ export function App() {
         <Container maxWidth="sm">
             <Typography variant="h1">Cuisines</Typography>
             <FormControl component="fieldset" className={classes.formControl}>
-                <FormLabel component="legend">Assign responsibility</FormLabel>
+                <FormLabel component="legend">Select Cuisines</FormLabel>
                 <FormGroup>
                     {sortedCuisines.map(cuisine =>
                         <FormControlLabel
