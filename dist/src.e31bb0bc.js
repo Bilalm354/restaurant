@@ -29772,57 +29772,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"data/restaurants.json":[function(require,module,exports) {
-module.exports = [{
-  "id": 1,
-  "name": "Mumtaz",
-  "address": "Chadwick Street, 1 & 2 Mackenzie House, Leeds LS10 1PJ",
-  "cuisine": ["Indian", "Asian", "Balti", "Pakistani"],
-  "dog-friendly": false,
-  "vegan-options": true,
-  "rating": 5
-}, {
-  "id": 2,
-  "name": "Salami & Co",
-  "address": "10 Market Place, Otley, Leeds LS21 3AQ England",
-  "cuisine": ["Cafe", "British"],
-  "dog-friendly": true,
-  "vegan-options": true,
-  "rating": 5
-}, {
-  "id": 3,
-  "name": "LS6 Cafe",
-  "address": "16A Headingley Lane, Leeds LS6 2AS England",
-  "cuisine": ["British", "Cafe", "International"],
-  "dog-friendly": true,
-  "vegan-options": true,
-  "rating": 4
-}, {
-  "id": 4,
-  "name": "Gaucho",
-  "address": "21-22 Park Row, Leeds LS1 5JF England",
-  "cuisine": ["Steakhouse", "Argentinian"],
-  "dog-friendly": false,
-  "vegan-options": false,
-  "rating": 3
-}, {
-  "id": 5,
-  "name": "Viet Guy",
-  "address": "159 Lower Briggate, Leeds LS1 6LY England",
-  "cuisine": ["Asian", "Vietnamese"],
-  "dog-friendly": false,
-  "vegan-options": true,
-  "rating": 4.5
-}, {
-  "id": 6,
-  "name": "The Brunswick",
-  "address": "82 North Street, Leeds LS2 7PN England",
-  "cuisine": ["Bar", "British", "Pub"],
-  "dog-friendly": true,
-  "vegan-options": true,
-  "rating": 4
-}];
-},{}],"../node_modules/@material-ui/core/esm/colors/common.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../node_modules/@material-ui/core/esm/colors/common.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -83055,48 +83005,7 @@ Object.keys(_Zoom).forEach(function (key) {
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-},{"./colors":"../node_modules/@material-ui/core/esm/colors/index.js","./styles":"../node_modules/@material-ui/core/esm/styles/index.js","./utils":"../node_modules/@material-ui/core/esm/utils/index.js","./Accordion":"../node_modules/@material-ui/core/esm/Accordion/index.js","./AccordionActions":"../node_modules/@material-ui/core/esm/AccordionActions/index.js","./AccordionDetails":"../node_modules/@material-ui/core/esm/AccordionDetails/index.js","./AccordionSummary":"../node_modules/@material-ui/core/esm/AccordionSummary/index.js","./AppBar":"../node_modules/@material-ui/core/esm/AppBar/index.js","./Avatar":"../node_modules/@material-ui/core/esm/Avatar/index.js","./Backdrop":"../node_modules/@material-ui/core/esm/Backdrop/index.js","./Badge":"../node_modules/@material-ui/core/esm/Badge/index.js","./BottomNavigation":"../node_modules/@material-ui/core/esm/BottomNavigation/index.js","./BottomNavigationAction":"../node_modules/@material-ui/core/esm/BottomNavigationAction/index.js","./Box":"../node_modules/@material-ui/core/esm/Box/index.js","./Breadcrumbs":"../node_modules/@material-ui/core/esm/Breadcrumbs/index.js","./Button":"../node_modules/@material-ui/core/esm/Button/index.js","./ButtonBase":"../node_modules/@material-ui/core/esm/ButtonBase/index.js","./ButtonGroup":"../node_modules/@material-ui/core/esm/ButtonGroup/index.js","./Card":"../node_modules/@material-ui/core/esm/Card/index.js","./CardActionArea":"../node_modules/@material-ui/core/esm/CardActionArea/index.js","./CardActions":"../node_modules/@material-ui/core/esm/CardActions/index.js","./CardContent":"../node_modules/@material-ui/core/esm/CardContent/index.js","./CardHeader":"../node_modules/@material-ui/core/esm/CardHeader/index.js","./CardMedia":"../node_modules/@material-ui/core/esm/CardMedia/index.js","./Checkbox":"../node_modules/@material-ui/core/esm/Checkbox/index.js","./Chip":"../node_modules/@material-ui/core/esm/Chip/index.js","./CircularProgress":"../node_modules/@material-ui/core/esm/CircularProgress/index.js","./ClickAwayListener":"../node_modules/@material-ui/core/esm/ClickAwayListener/index.js","./Collapse":"../node_modules/@material-ui/core/esm/Collapse/index.js","./Container":"../node_modules/@material-ui/core/esm/Container/index.js","./CssBaseline":"../node_modules/@material-ui/core/esm/CssBaseline/index.js","./Dialog":"../node_modules/@material-ui/core/esm/Dialog/index.js","./DialogActions":"../node_modules/@material-ui/core/esm/DialogActions/index.js","./DialogContent":"../node_modules/@material-ui/core/esm/DialogContent/index.js","./DialogContentText":"../node_modules/@material-ui/core/esm/DialogContentText/index.js","./DialogTitle":"../node_modules/@material-ui/core/esm/DialogTitle/index.js","./Divider":"../node_modules/@material-ui/core/esm/Divider/index.js","./Drawer":"../node_modules/@material-ui/core/esm/Drawer/index.js","./ExpansionPanel":"../node_modules/@material-ui/core/esm/ExpansionPanel/index.js","./ExpansionPanelActions":"../node_modules/@material-ui/core/esm/ExpansionPanelActions/index.js","./ExpansionPanelDetails":"../node_modules/@material-ui/core/esm/ExpansionPanelDetails/index.js","./ExpansionPanelSummary":"../node_modules/@material-ui/core/esm/ExpansionPanelSummary/index.js","./Fab":"../node_modules/@material-ui/core/esm/Fab/index.js","./Fade":"../node_modules/@material-ui/core/esm/Fade/index.js","./FilledInput":"../node_modules/@material-ui/core/esm/FilledInput/index.js","./FormControl":"../node_modules/@material-ui/core/esm/FormControl/index.js","./FormControlLabel":"../node_modules/@material-ui/core/esm/FormControlLabel/index.js","./FormGroup":"../node_modules/@material-ui/core/esm/FormGroup/index.js","./FormHelperText":"../node_modules/@material-ui/core/esm/FormHelperText/index.js","./FormLabel":"../node_modules/@material-ui/core/esm/FormLabel/index.js","./Grid":"../node_modules/@material-ui/core/esm/Grid/index.js","./GridList":"../node_modules/@material-ui/core/esm/GridList/index.js","./GridListTile":"../node_modules/@material-ui/core/esm/GridListTile/index.js","./GridListTileBar":"../node_modules/@material-ui/core/esm/GridListTileBar/index.js","./Grow":"../node_modules/@material-ui/core/esm/Grow/index.js","./Hidden":"../node_modules/@material-ui/core/esm/Hidden/index.js","./Icon":"../node_modules/@material-ui/core/esm/Icon/index.js","./IconButton":"../node_modules/@material-ui/core/esm/IconButton/index.js","./Input":"../node_modules/@material-ui/core/esm/Input/index.js","./InputAdornment":"../node_modules/@material-ui/core/esm/InputAdornment/index.js","./InputBase":"../node_modules/@material-ui/core/esm/InputBase/index.js","./InputLabel":"../node_modules/@material-ui/core/esm/InputLabel/index.js","./LinearProgress":"../node_modules/@material-ui/core/esm/LinearProgress/index.js","./Link":"../node_modules/@material-ui/core/esm/Link/index.js","./List":"../node_modules/@material-ui/core/esm/List/index.js","./ListItem":"../node_modules/@material-ui/core/esm/ListItem/index.js","./ListItemAvatar":"../node_modules/@material-ui/core/esm/ListItemAvatar/index.js","./ListItemIcon":"../node_modules/@material-ui/core/esm/ListItemIcon/index.js","./ListItemSecondaryAction":"../node_modules/@material-ui/core/esm/ListItemSecondaryAction/index.js","./ListItemText":"../node_modules/@material-ui/core/esm/ListItemText/index.js","./ListSubheader":"../node_modules/@material-ui/core/esm/ListSubheader/index.js","./Menu":"../node_modules/@material-ui/core/esm/Menu/index.js","./MenuItem":"../node_modules/@material-ui/core/esm/MenuItem/index.js","./MenuList":"../node_modules/@material-ui/core/esm/MenuList/index.js","./MobileStepper":"../node_modules/@material-ui/core/esm/MobileStepper/index.js","./Modal":"../node_modules/@material-ui/core/esm/Modal/index.js","./NativeSelect":"../node_modules/@material-ui/core/esm/NativeSelect/index.js","./NoSsr":"../node_modules/@material-ui/core/esm/NoSsr/index.js","./OutlinedInput":"../node_modules/@material-ui/core/esm/OutlinedInput/index.js","./Paper":"../node_modules/@material-ui/core/esm/Paper/index.js","./Popover":"../node_modules/@material-ui/core/esm/Popover/index.js","./Popper":"../node_modules/@material-ui/core/esm/Popper/index.js","./Portal":"../node_modules/@material-ui/core/esm/Portal/index.js","./Radio":"../node_modules/@material-ui/core/esm/Radio/index.js","./RadioGroup":"../node_modules/@material-ui/core/esm/RadioGroup/index.js","./RootRef":"../node_modules/@material-ui/core/esm/RootRef/index.js","./Select":"../node_modules/@material-ui/core/esm/Select/index.js","./Slide":"../node_modules/@material-ui/core/esm/Slide/index.js","./Slider":"../node_modules/@material-ui/core/esm/Slider/index.js","./Snackbar":"../node_modules/@material-ui/core/esm/Snackbar/index.js","./SnackbarContent":"../node_modules/@material-ui/core/esm/SnackbarContent/index.js","./Step":"../node_modules/@material-ui/core/esm/Step/index.js","./StepButton":"../node_modules/@material-ui/core/esm/StepButton/index.js","./StepConnector":"../node_modules/@material-ui/core/esm/StepConnector/index.js","./StepContent":"../node_modules/@material-ui/core/esm/StepContent/index.js","./StepIcon":"../node_modules/@material-ui/core/esm/StepIcon/index.js","./StepLabel":"../node_modules/@material-ui/core/esm/StepLabel/index.js","./Stepper":"../node_modules/@material-ui/core/esm/Stepper/index.js","./SvgIcon":"../node_modules/@material-ui/core/esm/SvgIcon/index.js","./SwipeableDrawer":"../node_modules/@material-ui/core/esm/SwipeableDrawer/index.js","./Switch":"../node_modules/@material-ui/core/esm/Switch/index.js","./Tab":"../node_modules/@material-ui/core/esm/Tab/index.js","./Table":"../node_modules/@material-ui/core/esm/Table/index.js","./TableBody":"../node_modules/@material-ui/core/esm/TableBody/index.js","./TableCell":"../node_modules/@material-ui/core/esm/TableCell/index.js","./TableContainer":"../node_modules/@material-ui/core/esm/TableContainer/index.js","./TableFooter":"../node_modules/@material-ui/core/esm/TableFooter/index.js","./TableHead":"../node_modules/@material-ui/core/esm/TableHead/index.js","./TablePagination":"../node_modules/@material-ui/core/esm/TablePagination/index.js","./TableRow":"../node_modules/@material-ui/core/esm/TableRow/index.js","./TableSortLabel":"../node_modules/@material-ui/core/esm/TableSortLabel/index.js","./Tabs":"../node_modules/@material-ui/core/esm/Tabs/index.js","./TabScrollButton":"../node_modules/@material-ui/core/esm/TabScrollButton/index.js","./TextField":"../node_modules/@material-ui/core/esm/TextField/index.js","./TextareaAutosize":"../node_modules/@material-ui/core/esm/TextareaAutosize/index.js","./Toolbar":"../node_modules/@material-ui/core/esm/Toolbar/index.js","./Tooltip":"../node_modules/@material-ui/core/esm/Tooltip/index.js","./Typography":"../node_modules/@material-ui/core/esm/Typography/index.js","./Unstable_TrapFocus":"../node_modules/@material-ui/core/esm/Unstable_TrapFocus/index.js","./useMediaQuery":"../node_modules/@material-ui/core/esm/useMediaQuery/index.js","./useScrollTrigger":"../node_modules/@material-ui/core/esm/useScrollTrigger/index.js","./withMobileDialog":"../node_modules/@material-ui/core/esm/withMobileDialog/index.js","./withWidth":"../node_modules/@material-ui/core/esm/withWidth/index.js","./Zoom":"../node_modules/@material-ui/core/esm/Zoom/index.js"}],"RestaurantsList.jsx":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.RestaurantsList = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _core = require("@material-ui/core");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var RestaurantsList = function RestaurantsList(props) {
-  return props.availableRestaurants.map(function (restaurant, index) {
-    return /*#__PURE__*/_react.default.createElement("div", {
-      key: index
-    }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
-      variant: "h4",
-      gutterBottom: true
-    }, restaurant.name), /*#__PURE__*/_react.default.createElement(_core.Typography, {
-      variant: "body1",
-      gutterBottom: true
-    }, "Address: ", restaurant.address), /*#__PURE__*/_react.default.createElement(_core.Typography, {
-      variant: "body1",
-      gutterBottom: true
-    }, "Cuisine: ", restaurant.cuisine.join(', ')), /*#__PURE__*/_react.default.createElement(_core.Typography, {
-      variant: "body1",
-      gutterBottom: true
-    }, "Dog Friendly: ", restaurant["dog-friendly"] ? "Yes" : "No"), /*#__PURE__*/_react.default.createElement(_core.Typography, {
-      variant: "body1",
-      gutterBottom: true
-    }, "Vegan Options: ", restaurant["vegan-options"] ? "Yes" : "No"), /*#__PURE__*/_react.default.createElement(_core.Typography, {
-      variant: "body1",
-      gutterBottom: true
-    }, "Rating: ", restaurant.rating));
-  });
-};
-
-exports.RestaurantsList = RestaurantsList;
-},{"react":"../node_modules/react/index.js","@material-ui/core":"../node_modules/@material-ui/core/esm/index.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./colors":"../node_modules/@material-ui/core/esm/colors/index.js","./styles":"../node_modules/@material-ui/core/esm/styles/index.js","./utils":"../node_modules/@material-ui/core/esm/utils/index.js","./Accordion":"../node_modules/@material-ui/core/esm/Accordion/index.js","./AccordionActions":"../node_modules/@material-ui/core/esm/AccordionActions/index.js","./AccordionDetails":"../node_modules/@material-ui/core/esm/AccordionDetails/index.js","./AccordionSummary":"../node_modules/@material-ui/core/esm/AccordionSummary/index.js","./AppBar":"../node_modules/@material-ui/core/esm/AppBar/index.js","./Avatar":"../node_modules/@material-ui/core/esm/Avatar/index.js","./Backdrop":"../node_modules/@material-ui/core/esm/Backdrop/index.js","./Badge":"../node_modules/@material-ui/core/esm/Badge/index.js","./BottomNavigation":"../node_modules/@material-ui/core/esm/BottomNavigation/index.js","./BottomNavigationAction":"../node_modules/@material-ui/core/esm/BottomNavigationAction/index.js","./Box":"../node_modules/@material-ui/core/esm/Box/index.js","./Breadcrumbs":"../node_modules/@material-ui/core/esm/Breadcrumbs/index.js","./Button":"../node_modules/@material-ui/core/esm/Button/index.js","./ButtonBase":"../node_modules/@material-ui/core/esm/ButtonBase/index.js","./ButtonGroup":"../node_modules/@material-ui/core/esm/ButtonGroup/index.js","./Card":"../node_modules/@material-ui/core/esm/Card/index.js","./CardActionArea":"../node_modules/@material-ui/core/esm/CardActionArea/index.js","./CardActions":"../node_modules/@material-ui/core/esm/CardActions/index.js","./CardContent":"../node_modules/@material-ui/core/esm/CardContent/index.js","./CardHeader":"../node_modules/@material-ui/core/esm/CardHeader/index.js","./CardMedia":"../node_modules/@material-ui/core/esm/CardMedia/index.js","./Checkbox":"../node_modules/@material-ui/core/esm/Checkbox/index.js","./Chip":"../node_modules/@material-ui/core/esm/Chip/index.js","./CircularProgress":"../node_modules/@material-ui/core/esm/CircularProgress/index.js","./ClickAwayListener":"../node_modules/@material-ui/core/esm/ClickAwayListener/index.js","./Collapse":"../node_modules/@material-ui/core/esm/Collapse/index.js","./Container":"../node_modules/@material-ui/core/esm/Container/index.js","./CssBaseline":"../node_modules/@material-ui/core/esm/CssBaseline/index.js","./Dialog":"../node_modules/@material-ui/core/esm/Dialog/index.js","./DialogActions":"../node_modules/@material-ui/core/esm/DialogActions/index.js","./DialogContent":"../node_modules/@material-ui/core/esm/DialogContent/index.js","./DialogContentText":"../node_modules/@material-ui/core/esm/DialogContentText/index.js","./DialogTitle":"../node_modules/@material-ui/core/esm/DialogTitle/index.js","./Divider":"../node_modules/@material-ui/core/esm/Divider/index.js","./Drawer":"../node_modules/@material-ui/core/esm/Drawer/index.js","./ExpansionPanel":"../node_modules/@material-ui/core/esm/ExpansionPanel/index.js","./ExpansionPanelActions":"../node_modules/@material-ui/core/esm/ExpansionPanelActions/index.js","./ExpansionPanelDetails":"../node_modules/@material-ui/core/esm/ExpansionPanelDetails/index.js","./ExpansionPanelSummary":"../node_modules/@material-ui/core/esm/ExpansionPanelSummary/index.js","./Fab":"../node_modules/@material-ui/core/esm/Fab/index.js","./Fade":"../node_modules/@material-ui/core/esm/Fade/index.js","./FilledInput":"../node_modules/@material-ui/core/esm/FilledInput/index.js","./FormControl":"../node_modules/@material-ui/core/esm/FormControl/index.js","./FormControlLabel":"../node_modules/@material-ui/core/esm/FormControlLabel/index.js","./FormGroup":"../node_modules/@material-ui/core/esm/FormGroup/index.js","./FormHelperText":"../node_modules/@material-ui/core/esm/FormHelperText/index.js","./FormLabel":"../node_modules/@material-ui/core/esm/FormLabel/index.js","./Grid":"../node_modules/@material-ui/core/esm/Grid/index.js","./GridList":"../node_modules/@material-ui/core/esm/GridList/index.js","./GridListTile":"../node_modules/@material-ui/core/esm/GridListTile/index.js","./GridListTileBar":"../node_modules/@material-ui/core/esm/GridListTileBar/index.js","./Grow":"../node_modules/@material-ui/core/esm/Grow/index.js","./Hidden":"../node_modules/@material-ui/core/esm/Hidden/index.js","./Icon":"../node_modules/@material-ui/core/esm/Icon/index.js","./IconButton":"../node_modules/@material-ui/core/esm/IconButton/index.js","./Input":"../node_modules/@material-ui/core/esm/Input/index.js","./InputAdornment":"../node_modules/@material-ui/core/esm/InputAdornment/index.js","./InputBase":"../node_modules/@material-ui/core/esm/InputBase/index.js","./InputLabel":"../node_modules/@material-ui/core/esm/InputLabel/index.js","./LinearProgress":"../node_modules/@material-ui/core/esm/LinearProgress/index.js","./Link":"../node_modules/@material-ui/core/esm/Link/index.js","./List":"../node_modules/@material-ui/core/esm/List/index.js","./ListItem":"../node_modules/@material-ui/core/esm/ListItem/index.js","./ListItemAvatar":"../node_modules/@material-ui/core/esm/ListItemAvatar/index.js","./ListItemIcon":"../node_modules/@material-ui/core/esm/ListItemIcon/index.js","./ListItemSecondaryAction":"../node_modules/@material-ui/core/esm/ListItemSecondaryAction/index.js","./ListItemText":"../node_modules/@material-ui/core/esm/ListItemText/index.js","./ListSubheader":"../node_modules/@material-ui/core/esm/ListSubheader/index.js","./Menu":"../node_modules/@material-ui/core/esm/Menu/index.js","./MenuItem":"../node_modules/@material-ui/core/esm/MenuItem/index.js","./MenuList":"../node_modules/@material-ui/core/esm/MenuList/index.js","./MobileStepper":"../node_modules/@material-ui/core/esm/MobileStepper/index.js","./Modal":"../node_modules/@material-ui/core/esm/Modal/index.js","./NativeSelect":"../node_modules/@material-ui/core/esm/NativeSelect/index.js","./NoSsr":"../node_modules/@material-ui/core/esm/NoSsr/index.js","./OutlinedInput":"../node_modules/@material-ui/core/esm/OutlinedInput/index.js","./Paper":"../node_modules/@material-ui/core/esm/Paper/index.js","./Popover":"../node_modules/@material-ui/core/esm/Popover/index.js","./Popper":"../node_modules/@material-ui/core/esm/Popper/index.js","./Portal":"../node_modules/@material-ui/core/esm/Portal/index.js","./Radio":"../node_modules/@material-ui/core/esm/Radio/index.js","./RadioGroup":"../node_modules/@material-ui/core/esm/RadioGroup/index.js","./RootRef":"../node_modules/@material-ui/core/esm/RootRef/index.js","./Select":"../node_modules/@material-ui/core/esm/Select/index.js","./Slide":"../node_modules/@material-ui/core/esm/Slide/index.js","./Slider":"../node_modules/@material-ui/core/esm/Slider/index.js","./Snackbar":"../node_modules/@material-ui/core/esm/Snackbar/index.js","./SnackbarContent":"../node_modules/@material-ui/core/esm/SnackbarContent/index.js","./Step":"../node_modules/@material-ui/core/esm/Step/index.js","./StepButton":"../node_modules/@material-ui/core/esm/StepButton/index.js","./StepConnector":"../node_modules/@material-ui/core/esm/StepConnector/index.js","./StepContent":"../node_modules/@material-ui/core/esm/StepContent/index.js","./StepIcon":"../node_modules/@material-ui/core/esm/StepIcon/index.js","./StepLabel":"../node_modules/@material-ui/core/esm/StepLabel/index.js","./Stepper":"../node_modules/@material-ui/core/esm/Stepper/index.js","./SvgIcon":"../node_modules/@material-ui/core/esm/SvgIcon/index.js","./SwipeableDrawer":"../node_modules/@material-ui/core/esm/SwipeableDrawer/index.js","./Switch":"../node_modules/@material-ui/core/esm/Switch/index.js","./Tab":"../node_modules/@material-ui/core/esm/Tab/index.js","./Table":"../node_modules/@material-ui/core/esm/Table/index.js","./TableBody":"../node_modules/@material-ui/core/esm/TableBody/index.js","./TableCell":"../node_modules/@material-ui/core/esm/TableCell/index.js","./TableContainer":"../node_modules/@material-ui/core/esm/TableContainer/index.js","./TableFooter":"../node_modules/@material-ui/core/esm/TableFooter/index.js","./TableHead":"../node_modules/@material-ui/core/esm/TableHead/index.js","./TablePagination":"../node_modules/@material-ui/core/esm/TablePagination/index.js","./TableRow":"../node_modules/@material-ui/core/esm/TableRow/index.js","./TableSortLabel":"../node_modules/@material-ui/core/esm/TableSortLabel/index.js","./Tabs":"../node_modules/@material-ui/core/esm/Tabs/index.js","./TabScrollButton":"../node_modules/@material-ui/core/esm/TabScrollButton/index.js","./TextField":"../node_modules/@material-ui/core/esm/TextField/index.js","./TextareaAutosize":"../node_modules/@material-ui/core/esm/TextareaAutosize/index.js","./Toolbar":"../node_modules/@material-ui/core/esm/Toolbar/index.js","./Tooltip":"../node_modules/@material-ui/core/esm/Tooltip/index.js","./Typography":"../node_modules/@material-ui/core/esm/Typography/index.js","./Unstable_TrapFocus":"../node_modules/@material-ui/core/esm/Unstable_TrapFocus/index.js","./useMediaQuery":"../node_modules/@material-ui/core/esm/useMediaQuery/index.js","./useScrollTrigger":"../node_modules/@material-ui/core/esm/useScrollTrigger/index.js","./withMobileDialog":"../node_modules/@material-ui/core/esm/withMobileDialog/index.js","./withWidth":"../node_modules/@material-ui/core/esm/withWidth/index.js","./Zoom":"../node_modules/@material-ui/core/esm/Zoom/index.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -83169,7 +83078,156 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./files/roboto-cyrillic-ext-400-normal.woff2":[["roboto-cyrillic-ext-400-normal.d342ce7d.woff2","../node_modules/fontsource-roboto/files/roboto-cyrillic-ext-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-cyrillic-ext-400-normal.woff2"],"./files/roboto-all-400-normal.woff":[["roboto-all-400-normal.5b9e8671.woff","../node_modules/fontsource-roboto/files/roboto-all-400-normal.woff"],"../node_modules/fontsource-roboto/files/roboto-all-400-normal.woff"],"./files/roboto-cyrillic-400-normal.woff2":[["roboto-cyrillic-400-normal.8623214a.woff2","../node_modules/fontsource-roboto/files/roboto-cyrillic-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-cyrillic-400-normal.woff2"],"./files/roboto-greek-ext-400-normal.woff2":[["roboto-greek-ext-400-normal.3c848f97.woff2","../node_modules/fontsource-roboto/files/roboto-greek-ext-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-greek-ext-400-normal.woff2"],"./files/roboto-greek-400-normal.woff2":[["roboto-greek-400-normal.e028c61a.woff2","../node_modules/fontsource-roboto/files/roboto-greek-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-greek-400-normal.woff2"],"./files/roboto-vietnamese-400-normal.woff2":[["roboto-vietnamese-400-normal.bdee4470.woff2","../node_modules/fontsource-roboto/files/roboto-vietnamese-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-vietnamese-400-normal.woff2"],"./files/roboto-latin-ext-400-normal.woff2":[["roboto-latin-ext-400-normal.2fd44828.woff2","../node_modules/fontsource-roboto/files/roboto-latin-ext-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-latin-ext-400-normal.woff2"],"./files/roboto-latin-400-normal.woff2":[["roboto-latin-400-normal.56819272.woff2","../node_modules/fontsource-roboto/files/roboto-latin-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-latin-400-normal.woff2"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"App.jsx":[function(require,module,exports) {
+},{"./files/roboto-cyrillic-ext-400-normal.woff2":[["roboto-cyrillic-ext-400-normal.d342ce7d.woff2","../node_modules/fontsource-roboto/files/roboto-cyrillic-ext-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-cyrillic-ext-400-normal.woff2"],"./files/roboto-all-400-normal.woff":[["roboto-all-400-normal.5b9e8671.woff","../node_modules/fontsource-roboto/files/roboto-all-400-normal.woff"],"../node_modules/fontsource-roboto/files/roboto-all-400-normal.woff"],"./files/roboto-cyrillic-400-normal.woff2":[["roboto-cyrillic-400-normal.8623214a.woff2","../node_modules/fontsource-roboto/files/roboto-cyrillic-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-cyrillic-400-normal.woff2"],"./files/roboto-greek-ext-400-normal.woff2":[["roboto-greek-ext-400-normal.3c848f97.woff2","../node_modules/fontsource-roboto/files/roboto-greek-ext-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-greek-ext-400-normal.woff2"],"./files/roboto-greek-400-normal.woff2":[["roboto-greek-400-normal.e028c61a.woff2","../node_modules/fontsource-roboto/files/roboto-greek-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-greek-400-normal.woff2"],"./files/roboto-vietnamese-400-normal.woff2":[["roboto-vietnamese-400-normal.bdee4470.woff2","../node_modules/fontsource-roboto/files/roboto-vietnamese-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-vietnamese-400-normal.woff2"],"./files/roboto-latin-ext-400-normal.woff2":[["roboto-latin-ext-400-normal.2fd44828.woff2","../node_modules/fontsource-roboto/files/roboto-latin-ext-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-latin-ext-400-normal.woff2"],"./files/roboto-latin-400-normal.woff2":[["roboto-latin-400-normal.56819272.woff2","../node_modules/fontsource-roboto/files/roboto-latin-400-normal.woff2"],"../node_modules/fontsource-roboto/files/roboto-latin-400-normal.woff2"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"data/restaurants.json":[function(require,module,exports) {
+module.exports = [{
+  "id": 1,
+  "name": "Mumtaz",
+  "address": "Chadwick Street, 1 & 2 Mackenzie House, Leeds LS10 1PJ",
+  "cuisine": ["Indian", "Asian", "Balti", "Pakistani"],
+  "dog-friendly": false,
+  "vegan-options": true,
+  "rating": 5
+}, {
+  "id": 2,
+  "name": "Salami & Co",
+  "address": "10 Market Place, Otley, Leeds LS21 3AQ England",
+  "cuisine": ["Cafe", "British"],
+  "dog-friendly": true,
+  "vegan-options": true,
+  "rating": 5
+}, {
+  "id": 3,
+  "name": "LS6 Cafe",
+  "address": "16A Headingley Lane, Leeds LS6 2AS England",
+  "cuisine": ["British", "Cafe", "International"],
+  "dog-friendly": true,
+  "vegan-options": true,
+  "rating": 4
+}, {
+  "id": 4,
+  "name": "Gaucho",
+  "address": "21-22 Park Row, Leeds LS1 5JF England",
+  "cuisine": ["Steakhouse", "Argentinian"],
+  "dog-friendly": false,
+  "vegan-options": false,
+  "rating": 3
+}, {
+  "id": 5,
+  "name": "Viet Guy",
+  "address": "159 Lower Briggate, Leeds LS1 6LY England",
+  "cuisine": ["Asian", "Vietnamese"],
+  "dog-friendly": false,
+  "vegan-options": true,
+  "rating": 4.5
+}, {
+  "id": 6,
+  "name": "The Brunswick",
+  "address": "82 North Street, Leeds LS2 7PN England",
+  "cuisine": ["Bar", "British", "Pub"],
+  "dog-friendly": true,
+  "vegan-options": true,
+  "rating": 4
+}];
+},{}],"components/RestaurantsList.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.RestaurantsList = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _core = require("@material-ui/core");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var RestaurantsList = function RestaurantsList(props) {
+  return props.availableRestaurants.map(function (restaurant, index) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: index
+    }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
+      variant: "h4",
+      gutterBottom: true
+    }, restaurant.name), /*#__PURE__*/_react.default.createElement(_core.Typography, {
+      variant: "body1",
+      gutterBottom: true
+    }, "Address: ", restaurant.address), /*#__PURE__*/_react.default.createElement(_core.Typography, {
+      variant: "body1",
+      gutterBottom: true
+    }, "Cuisine: ", restaurant.cuisine.join(', ')), /*#__PURE__*/_react.default.createElement(_core.Typography, {
+      variant: "body1",
+      gutterBottom: true
+    }, "Dog Friendly: ", restaurant["dog-friendly"] ? "Yes" : "No"), /*#__PURE__*/_react.default.createElement(_core.Typography, {
+      variant: "body1",
+      gutterBottom: true
+    }, "Vegan Options: ", restaurant["vegan-options"] ? "Yes" : "No"), /*#__PURE__*/_react.default.createElement(_core.Typography, {
+      variant: "body1",
+      gutterBottom: true
+    }, "Rating: ", restaurant.rating), /*#__PURE__*/_react.default.createElement("br", null));
+  });
+};
+
+exports.RestaurantsList = RestaurantsList;
+},{"react":"../node_modules/react/index.js","@material-ui/core":"../node_modules/@material-ui/core/esm/index.js"}],"components/Selection.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Selection = Selection;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _core = require("@material-ui/core");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var useStyles = (0, _core.makeStyles)({
+  root: {
+    width: '100%',
+    maxWidth: 500
+  }
+});
+
+function Selection(props) {
+  var classes = useStyles();
+  return /*#__PURE__*/_react.default.createElement(_core.FormControl, {
+    component: "fieldset",
+    className: classes.formControl
+  }, /*#__PURE__*/_react.default.createElement(_core.FormLabel, {
+    component: "legend"
+  }, "Select Cuisines"), /*#__PURE__*/_react.default.createElement(_core.FormGroup, null, props.sortedCuisines.map(function (cuisine) {
+    return /*#__PURE__*/_react.default.createElement(_core.FormControlLabel, {
+      key: cuisine,
+      control: /*#__PURE__*/_react.default.createElement(_core.Checkbox, {
+        checked: props.isSelected(cuisine),
+        onChange: props.handleChange,
+        name: cuisine
+      }),
+      label: cuisine
+    });
+  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_core.FormLabel, {
+    component: "legend"
+  }, "Toggles"), /*#__PURE__*/_react.default.createElement(_core.FormGroup, null, /*#__PURE__*/_react.default.createElement(_core.FormControlLabel, {
+    key: 'veganFriendly',
+    control: /*#__PURE__*/_react.default.createElement(_core.Checkbox, {
+      checked: props.veganFriendly,
+      onChange: props.handleToggle,
+      name: "veganFriendly"
+    }),
+    label: "Vegan Friendly"
+  }), /*#__PURE__*/_react.default.createElement(_core.FormControlLabel, {
+    key: 'dogFriendly',
+    control: /*#__PURE__*/_react.default.createElement(_core.Checkbox, {
+      checked: props.dogFriendly,
+      onChange: props.handleToggle,
+      name: "dogFriendly"
+    }),
+    label: "Dog Friendly"
+  })));
+}
+},{"react":"../node_modules/react/index.js","@material-ui/core":"../node_modules/@material-ui/core/esm/index.js"}],"App.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -83179,13 +83237,15 @@ exports.App = App;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _restaurants = _interopRequireDefault(require("~/data/restaurants"));
-
-var _RestaurantsList = require("~/RestaurantsList");
+var _core = require("@material-ui/core");
 
 require("fontsource-roboto");
 
-var _core = require("@material-ui/core");
+var _restaurants = _interopRequireDefault(require("~/data/restaurants"));
+
+var _RestaurantsList = require("~/components/RestaurantsList");
+
+var _Selection = require("~/components/Selection");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -83196,6 +83256,12 @@ function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread n
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -83209,42 +83275,23 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-function isEverySelectedCuisineInRestaurant(selectedCuisines, restaurant) {
-  return selectedCuisines.every(function (cuisine) {
-    return restaurant.cuisine.indexOf(cuisine) !== -1;
-  });
-}
-
-var useStyles = (0, _core.makeStyles)({
-  root: {
-    width: '100%',
-    maxWidth: 500
-  }
-});
-
 function App() {
-  var classes = useStyles();
-
   var _React$useState = _react.default.useState({
-    selectedCuisines: []
+    selectedCuisines: [],
+    veganFriendly: false,
+    dogFriendly: false
   }),
       _React$useState2 = _slicedToArray(_React$useState, 2),
       state = _React$useState2[0],
       setState = _React$useState2[1];
 
-  var allCuisinesFromData = _restaurants.default.map(function (restaurant) {
-    return restaurant.cuisine;
-  }).flat();
+  var isEverySelectedCuisineInRestaurant = function isEverySelectedCuisineInRestaurant(selectedCuisines, restaurant) {
+    return selectedCuisines.every(function (cuisine) {
+      return restaurant.cuisine.indexOf(cuisine) !== -1;
+    });
+  };
 
-  var uniqueCuisines = _toConsumableArray(new Set(allCuisinesFromData));
-
-  var sortedCuisines = uniqueCuisines.sort();
-
-  var restaurantsWithSelectedCuisines = _restaurants.default.filter(function (restaurant) {
-    return isEverySelectedCuisineInRestaurant(state.selectedCuisines, restaurant);
-  });
-
-  var handleChange = function handleChange(event) {
+  var handleSelectedCuisineChange = function handleSelectedCuisineChange(event) {
     var selectedCuisines = state.selectedCuisines;
     var index = state.selectedCuisines.indexOf(event.target.name);
 
@@ -83254,41 +83301,55 @@ function App() {
       selectedCuisines.splice(index);
     }
 
-    setState({
+    setState(_objectSpread(_objectSpread({}, state), {}, {
       selectedCuisines: selectedCuisines
-    });
+    }));
+  };
+
+  var handleToggle = function handleToggle(event) {
+    var name = event.target.name;
+    setState(_objectSpread(_objectSpread({}, state), {}, _defineProperty({}, name, !state[name])));
   };
 
   var isSelected = function isSelected(cuisine) {
     return state.selectedCuisines.indexOf(cuisine) !== -1;
   };
 
+  var allCuisinesFromData = _restaurants.default.map(function (restaurant) {
+    return restaurant.cuisine;
+  }).flat();
+
+  var uniqueCuisines = _toConsumableArray(new Set(allCuisinesFromData));
+
+  var sortedCuisines = uniqueCuisines.sort();
+  console.log(_restaurants.default);
+
+  var filteredRestaurants = _restaurants.default.filter(function (restaurant) {
+    return isEverySelectedCuisineInRestaurant(state.selectedCuisines, restaurant) && (state.dogFriendly ? restaurant['dog-friendly'] : true) && (state.veganFriendly ? restaurant['vegan-options'] : true);
+  });
+
   return /*#__PURE__*/_react.default.createElement(_core.Container, {
     maxWidth: "sm"
+  }, /*#__PURE__*/_react.default.createElement(_core.Container, {
+    maxWidth: "sm"
   }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
-    variant: "h1"
-  }, "Cuisines"), /*#__PURE__*/_react.default.createElement(_core.FormControl, {
-    component: "fieldset",
-    className: classes.formControl
-  }, /*#__PURE__*/_react.default.createElement(_core.FormLabel, {
-    component: "legend"
-  }, "Select Cuisines"), /*#__PURE__*/_react.default.createElement(_core.FormGroup, null, sortedCuisines.map(function (cuisine) {
-    return /*#__PURE__*/_react.default.createElement(_core.FormControlLabel, {
-      key: cuisine,
-      control: /*#__PURE__*/_react.default.createElement(_core.Checkbox, {
-        checked: isSelected(cuisine),
-        onChange: handleChange,
-        name: cuisine
-      }),
-      label: cuisine
-    });
-  })), /*#__PURE__*/_react.default.createElement(_core.FormHelperText, null, "Be careful")), /*#__PURE__*/_react.default.createElement(_core.Typography, {
-    variant: "h1"
+    variant: "h3"
+  }, "Cuisine Selection"), /*#__PURE__*/_react.default.createElement(_Selection.Selection, {
+    handleChange: handleSelectedCuisineChange,
+    isSelected: isSelected,
+    sortedCuisines: sortedCuisines,
+    dogFriendly: state.dogFriendly,
+    veganFriendly: state.veganFriendly,
+    handleToggle: handleToggle
+  })), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_core.Container, {
+    maxWidth: "sm"
+  }, /*#__PURE__*/_react.default.createElement(_core.Typography, {
+    variant: "h3"
   }, "Restaurants"), /*#__PURE__*/_react.default.createElement(_RestaurantsList.RestaurantsList, {
-    availableRestaurants: restaurantsWithSelectedCuisines
-  }));
+    availableRestaurants: filteredRestaurants
+  })));
 }
-},{"react":"../node_modules/react/index.js","~/data/restaurants":"data/restaurants.json","~/RestaurantsList":"RestaurantsList.jsx","fontsource-roboto":"../node_modules/fontsource-roboto/index.css","@material-ui/core":"../node_modules/@material-ui/core/esm/index.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","@material-ui/core":"../node_modules/@material-ui/core/esm/index.js","fontsource-roboto":"../node_modules/fontsource-roboto/index.css","~/data/restaurants":"data/restaurants.json","~/components/RestaurantsList":"components/RestaurantsList.jsx","~/components/Selection":"components/Selection.jsx"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -83328,7 +83389,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63373" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51755" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

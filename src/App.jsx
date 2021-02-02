@@ -1,69 +1,69 @@
 import React from "react"
-import restaurants from "~/data/restaurants"
-import { RestaurantsList } from '~/RestaurantsList'
+import { Container, Typography } from '@material-ui/core';
 import 'fontsource-roboto'
-import { Checkbox, FormHelperText, FormControlLabel, FormGroup, FormControl, FormLabel, makeStyles, Typography, Container } from '@material-ui/core';
-
-
-
-function isEverySelectedCuisineInRestaurant(selectedCuisines, restaurant) {
-    return selectedCuisines.every(cuisine => restaurant.cuisine.indexOf(cuisine) !== -1)
-}
-
-const useStyles = makeStyles({
-    root: {
-        width: '100%',
-        maxWidth: 500,
-    },
-});
-
+import restaurants from "~/data/restaurants"
+import { RestaurantsList } from '~/components/RestaurantsList'
+import { Selection } from '~/components/Selection'
 
 export function App() {
-    const classes = useStyles();
     const [state, setState] = React.useState({
-        selectedCuisines: []
+        selectedCuisines: [],
+        veganFriendly: false,
+        dogFriendly: false
     });
 
-    const allCuisinesFromData = restaurants.map((restaurant) => restaurant.cuisine).flat()
-    const uniqueCuisines = [... new Set(allCuisinesFromData)]
-    const sortedCuisines = uniqueCuisines.sort()
-    const restaurantsWithSelectedCuisines = restaurants.filter(restaurant => isEverySelectedCuisineInRestaurant(state.selectedCuisines, restaurant))
+    const isEverySelectedCuisineInRestaurant = (selectedCuisines, restaurant) =>
+        selectedCuisines.every(cuisine => restaurant.cuisine.indexOf(cuisine) !== -1)
 
-    const handleChange = (event) => {
+    const handleSelectedCuisineChange = (event) => {
         const selectedCuisines = state.selectedCuisines;
         const index = state.selectedCuisines.indexOf(event.target.name);
-        
+
         if (index === -1) {
             selectedCuisines.push(event.target.name)
         } else {
             selectedCuisines.splice(index)
         }
-        
-        setState({ selectedCuisines });
+
+        setState({ ...state, selectedCuisines });
     };
+
+    const handleToggle = (event) => {
+        const name = event.target.name;
+
+        setState({ ...state, [name]: !state[name] })
+    }
 
     const isSelected = (cuisine) => state.selectedCuisines.indexOf(cuisine) !== -1;
 
+    const allCuisinesFromData = restaurants.map((restaurant) => restaurant.cuisine).flat()
+    const uniqueCuisines = [... new Set(allCuisinesFromData)]
+    const sortedCuisines = uniqueCuisines.sort()
+    console.log(restaurants)
+    const filteredRestaurants = restaurants.filter(restaurant =>
+        isEverySelectedCuisineInRestaurant(state.selectedCuisines, restaurant)
+        && (state.dogFriendly ? restaurant['dog-friendly'] : true)
+        && (state.veganFriendly ? restaurant['vegan-options'] : true)
+    )
+
     return (
         <Container maxWidth="sm">
-            <Typography variant="h1">Cuisines</Typography>
-            <FormControl component="fieldset" className={classes.formControl}>
-                <FormLabel component="legend">Select Cuisines</FormLabel>
-                <FormGroup>
-                    {sortedCuisines.map(cuisine =>
-                        <FormControlLabel
-                            key = {cuisine}
-                            control={<Checkbox checked={isSelected(cuisine)} onChange={handleChange} name={cuisine} />}
-                            label={cuisine}
-                        />
-                    )}
-                </FormGroup>
-                <FormHelperText>Be careful</FormHelperText>
-            </FormControl>
-            <Typography variant="h1">Restaurants</Typography>
-
-
-            <RestaurantsList availableRestaurants={restaurantsWithSelectedCuisines} />
+            <Container maxWidth="sm">
+                <Typography variant="h3">Cuisine Selection</Typography>
+                <Selection
+                    handleChange={handleSelectedCuisineChange}
+                    isSelected={isSelected}
+                    sortedCuisines={sortedCuisines}
+                    dogFriendly={state.dogFriendly}
+                    veganFriendly={state.veganFriendly}
+                    handleToggle={handleToggle}
+                />
+            </Container>
+            <br />
+            <Container maxWidth="sm">
+                <Typography variant="h3">Restaurants</Typography>
+                <RestaurantsList availableRestaurants={filteredRestaurants} />
+            </Container>
         </Container>
     );
 }
